@@ -1,14 +1,49 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
-<h2>CatPhotoApp</h2>
+<style>
+    .red-text{
+        color: red;
+    }
+
+    .p {
+        font-size: 16px;
+        font-family: monospace;
+    }
+
+    h2 {
+        font-family: Lobster, monospace;
+    }
+
+    .smaller-image {
+        width: 100px;
+    }
+
+    .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%;
+    }
+
+    .silver-background {
+        background-color: silver;
+    }
+
+    #cat-photo-form {
+        background-color: green;
+    }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
 
 <main>
 
     <a href="#">placeholder link practice</a>
-    <p>View more cat photos <a href="https://freecatphotoapp.com" target="_blank">cat photos</a></p>
+    <p class="red-text">View more cat photos <a href="https://freecatphotoapp.com" target="_blank">cat photos</a></p>
 
-    <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="cat relaxing"></a>
+    <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" class="smaller-image thick-green-border" alt="cat relaxing"></a>
 
-    <div>
+    <div class="silver-background">
         <p>Things cats love:</p>
         <ol>
             <li>milk</li>
@@ -24,7 +59,7 @@
         </ul>
     </div>
 
-    <form action="/submit-cat-photo">
+    <form id="cat-photo-form" action="/submit-cat-photo">
         <input type="text" placeholder="cat photo URL" required>
         <label>
             <input type="radio" name="indoor-outdoor" checked>Indoor
