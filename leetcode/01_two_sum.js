@@ -11,7 +11,7 @@ You can return the answer in any order.
  * @param {number} target
  * @return {number[]}
  */
- var twoSum = function(nums, target) {
+var twoSum = function(nums, target) {
     for(var i = 0; i < nums.length-1; i++) {    //iterate from first to second to last digit
         for(var j = i+1; j<nums.length; j++) {  //iterate from number after i, to last digit
             if(nums[i]+nums[j] == target) {     //compare sum to target
