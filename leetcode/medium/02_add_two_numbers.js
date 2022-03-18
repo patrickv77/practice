@@ -18,6 +18,10 @@ You may assume the two numbers do not contain any leading zero, except the numbe
  * @return {ListNode}
  */
 
+/*simple improvements:
+    -since you start with sll and end with sll, populate your result as you go instead of using a string as an intermediate step
+*/
+
 var addTwoNumbers = function(l1, l2) {
     var carryOver = false;
     var str = "";
@@ -76,6 +80,8 @@ var addTwoNumbers = function(l1, l2) {
 
     return res;
 };
+
+
 
 /*
 Runtime: 254 ms, faster than 8.31% of JavaScript online submissions for Add Two Numbers.
