@@ -1,0 +1,103 @@
+HTML
+
+-----------------
+html boilerplate
+
+h elements <h1>-<h6>
+
+<!-- --> commenting
+
+images <img>
+
+external/internal links
+anchor elements <a>
+image links <img>
+
+unordered/ordered lists <ul> <ol>
+
+radio buttons/checkboxes
+
+<div> div elements
+
+<head> and <body>
+-----------------
+
+basic CSS
+
+-----------------
+text color
+
+<style> to style multiple elements
+
+hexcode to mix colors
+
+borders and rounded corners border-radius
+
+background-color
+
+id with #
+
+padding/margin
+    padding shifts the insides
+    margin shifts the outsides
+-----------------
+
+applied visual design
+
+-----------------
+
+text-align
+
+width/height
+
+<strong> bold
+<u> underline
+<em> italics
+<s> strikethrough
+
+<hr> long horizontal line
+
+box-shadow (offset-x, offset-y, blur-radius, spread-radius, color)
+    blur-radius and spread-radius are optional
+
+opacity
+
+text-transform
+
+font-size and font-weight
+
+line-height
+
+hover state can manipulate elements when you mouse over (hover) them
+
+relative position, absolute position, fixed position
+
+float property
+
+z-index for overlapping properties
+
+linear gradients
+
+@keyframes and animation properties
+
+bezier curves cubic-bezier
+    p0,p1,p2,p3
+    p0 and p3 are predetermined  p0 = (0,0) p3 = (1,1)
+    p1, p2 user defined using--> 
+        animation-timing-function: cubic-bezier (x1,y1,x2,y2)
+
+--------------
+
+applied accessability
+
+--------------
+
+alt tags when and when not to use
+
+h1-h6 should be organized in a meaningful and heirarchical fashion
+    there should only by one h1 ever
+    h2 subsection of h1, h3 subsection of h2 etc. do not skip from h2 to h4 because it looks better, use css to change relative sizings
+
+renaming div elements as article, nav, footer, main etc to help with readability/accessability
+
+

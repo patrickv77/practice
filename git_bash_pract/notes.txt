@@ -1,0 +1,25 @@
+BASH
+
+cd change directory
+mv move or rename files
+
+GIT
+
+git status
+    shows status of updated files etc
+
+git add <filename>
+    gets file(s) ready to be committed
+
+git commit -m "message"
+    commits changes to repo 
+
+git push
+    pushes commits to github
+
+git pull
+    pull changes/updates from github and merges
+
+git merge
+    merge changes from branch(es) and/or main
+
