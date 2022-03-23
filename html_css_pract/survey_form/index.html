@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Survey Form for FreeCodeCamp</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Standard Info Form</h1>
+        <p id="description">standard question form to practice various html/css functions</p>
+
+        <form>
+            <label for="name-label">Name:</label>
+            <input type="text" placeholder="name" id="name-label">
+            <br>
+
+            <label for="email-label">Email:</label>
+            <input type="email" placeholder="email@example.com" id="email-label" required>
+            <input type="submit" value="Submit">
+            <br><br>
+
+            <label for="number-label">How old are you? (0-122)</label>  
+            <input type="number" placeholder="age" id="number-label" min="0" max="122" required>
+            <span class="validity"></span>
+            <input type="submit">
+            <br><br>
+
+            <label for="dropdown">What country are you from?</label>
+            <select name="country" id="dropdown">
+                <option value="usa">USA</option>
+                <option value="not-usa">Not USA</option>
+            </select>
+            <br><br>
+
+            <fieldset>
+                <legend>Which gender identity do you most identify with?</legend>
+                <input id="male" type="radio" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input id="transgender-male" type="radio" name="gender" value="transgender-male">
+                <label for="transgender-male">Transgender Male</label><br>
+                <input id="transgender-female" type="radio" name="gender" value="transgender-female">
+                <label for="transgender-female">Transgender Female</label><br>
+                <input id="non-conforming" type="radio" name="gender" value="non-conforming">
+                <label for="non-conforming">Gender Variant/Non-Conforming</label><br>
+                <input id="not-listed" type="radio" name="gender" value="not-listed">
+                <label for="not-listed">Not listed</label>
+                <input type="text" id="not-listed" name="gender" placeholder="" style="width: 140px"><br>
+                <input id="no-answer" type="radio" name="gender" value="no-answer">
+                <label for="no-answer">Prefer not to answer</label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Check all that apply:</legend>
+                <input id="smart" type="checkbox" name="traits" value="smart">
+                <label for="smart">Smart</label>
+                <input id="funny" type="checkbox" name="traits" value="funny">
+                <label for="funny">Funny</label>
+                <input id="kind" type="checkbox" name="traits" value="kind">
+                <label for="kind">Kind</label>
+                <input id="caring" type="checkbox" name="traits" value="caring">
+                <label for="caring">Caring</label><br>
+                <input id="loyal" type="checkbox" name="traits" value="loyal">
+                <label for="loyal">Loyal</label>
+                <input id="witty" type="checkbox" name="traits" value="witty">
+                <label for="witty">Witty</label>
+                <input id="honest" type="checkbox" name="traits" value="honest">
+                <label for="honest">Honest</label>
+                <input id="responsible" type="checkbox" name="traits" value="responsible">
+                <label for="responsible">Responsible</label>
+            </fieldset>
+            <br>
+            <label for="additional-comments">Additional comments: </label><br>
+            <textarea id="additional-comments" name="additional-comments" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+
+
+	<!--<script src="index.js"></script>-->
+    </body>
+</html>

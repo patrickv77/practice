@@ -100,4 +100,35 @@ h1-h6 should be organized in a meaningful and heirarchical fashion
 
 renaming div elements as article, nav, footer, main etc to help with readability/accessability
 
+audio tag for audio elements
+    putting control within the tag brings up play pause volume controls
+
+figure/figcaption for more descriptive pictures
+
+use for with id in labels
+
+fieldset and legend for radio buttons (or groups of buttons/checkboxes etc)
+
+can make screen-reader only content and hide it off screen
+
+higher contrast ratio for readability
+
+can achieve different contrast ratio with hue, saturation, lightness as well as just changing the colors
+
+use more meaningful descriptors for anchor tags (dont use "click here" or "read more") 
+
+accesskey to assign hotkeys to links or buttons etc
+
+apply tabindex to text to highlight it when user tabs through page
+    can also determine the tab order of items when you tab through a page
+
+can use @media query to change css rules dependent on width or height of device
+
+responsive image:
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+use smaller images (retina image, generally half of normal resolution) to increase clarity 
 

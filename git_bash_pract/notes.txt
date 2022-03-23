@@ -2,6 +2,10 @@ BASH
 
 cd change directory
 mv move or rename files
+ls -la list all files in directory
+mkdir make folder
+
+------------------
 
 GIT
 
