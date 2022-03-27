@@ -132,3 +132,49 @@ responsive image:
 
 use smaller images (retina image, generally half of normal resolution) to increase clarity 
 
+CSS FLEXBOX
+
+    display: flex to position two boxes
+    flex-direction
+        row, column
+    justify-content (aligns items along the main axis)
+        center, flex-start, flex-end, space-around, space-evenly
+    align-items (aligns items along the cross axis)
+        center, flex-start, flex-end, stretch, baseline
+    flex-wrap (wraps items or not)
+        wrap, nowrap, wrap-reverse
+    flex-shrink to shrink things relative to other flex-shrink labeled items in the container
+    flex-grow opposite of shrink
+    flex-basis initial size of items before flex shrink/grow
+    **all 3 flex values can be combined into one flex statement**
+        flex: (flex-grow) (flex-shrink) (flex-basis)
+        default values are flex: 0 1 auto;
+    order property can be used to order flex items in container
+        the default order is the order they appear in source html
+        can be used to reorder items without shifting source html
+    align-self lets you adjust alignment on an individual basis
+
+CSS-GRID 
+
+    set display: grid to change any container to a grid
+        (wont do anything until you define the structure of the grid)\
+    grid-template-columns and grid-template-rows
+        example-- grid-template-columns: 50px 50px; <-- sets two columns of 50px each 
+    grid-column-gap and grid-row-gap for gaps btwn columns and rows
+        grid-gap combines these; one value makes a gap for both rows and columns, two values makes a gap for rows first then columns
+    imagine the lines between columns and rows
+        grid-column and grid-row can be used by putting a starting line and ending line to control how many columns or rows a container spans
+    justify-self aligns item horizontally
+        start, center, end
+    align-self aligns item vertically
+        start, center, end
+    justify-items (horizontally) and align-items (vertically) for all items in a container
+
+    grid-template-areas to assign names to sections of your grid
+        grid-area to put an item in your named section of the grid
+        example--   grid-template-areas:  "hello hello hello 
+                                         howdy howdy howdy
+                                        goodbye goodbye goodbye"
+                    grid-area: hello; places the item in the "hello" area of the grid
+    
+    
