@@ -1,0 +1,43 @@
+#header-img {
+    width: 164px;
+}
+
+h1 {
+    font-size: 48px;
+    
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+    background: #9C9C9C;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "advertLeft pics desc advertRight"
+        "advertLeft email options advertRight"  
+        "footer footer footer footer";
+}
+
+#nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #C3C3C3;
+    position: fixed;
+}
+
+li {
+    float: left;
+    display: inline;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
