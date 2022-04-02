@@ -1,21 +1,21 @@
-#header-img {
-    width: 164px;
-}
-
-h1 {
-    font-size: 48px;
-    
-}
-
 body {
     margin: 0px;
     width: 100%;
+    height: 100%;
     background: #9C9C9C;
+    display: grid;
     grid-template-areas: 
         "nav nav nav nav"
-        "advertLeft pics desc advertRight"
+        ". header header ."
+        "advertLeft pics options advertRight"
         "advertLeft email options advertRight"  
         "footer footer footer footer";
+    grid-template-rows: 46px 60px 3fr 1fr 200px;
+    grid-template-columns: 100px 1fr 1fr 100px;
+}
+
+body > nav {
+    grid-area: nav;
 }
 
 #nav-list{
@@ -40,4 +40,51 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
+
+body > header {
+    grid-area: header;
+    width:100%;
+    text-align: center;
+    align-self: center;
+    background-color: red;
+}
+
+#header-img {
+    height: auto;
+}
+
+h1 {
+    font-size: 36px;
+}       
+
+body > advertLeft {
+    grid-area: advertLeft;
+    background-color: pink;
+}
+
+body > advertRight {
+    grid-area: advertRight;
+    background-color: pink;
+}
+
+body > options {
+    grid-area: options;
+    background-color: greenyellow;
+}
+
+body > email {
+    grid-area: email;
+    background-color: blue;
+}
+
+body > pics {
+    grid-area: pics;
+    background-color: orange;
+}
+
+body > footer {
+    grid-area: footer;
+    background-color: green;
+}
+
