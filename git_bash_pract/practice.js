@@ -1,11 +1,14 @@
-var isValid = function(s) {
+
+
+
+/*var isValid = function(s) {
     var arr = [];
     for(var i = 0; i < s.length; i++) {
         if(s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') { 
             arr.push(s.charAt(i));
         } else {
+            if(arr.length == 0) return false;
             var asciiTemp = s.charAt(i).charCodeAt() - arr.pop().charCodeAt();
-            console.log(asciiTemp);
             if(asciiTemp !== 1 && asciiTemp !== 2) {
                 return false;
             }
@@ -19,7 +22,7 @@ var isValid = function(s) {
     }
 };
 
-console.log(isValid("()"));
+console.log(isValid("()"));*/
 
 /*var a = '{';
 var b = '}'
