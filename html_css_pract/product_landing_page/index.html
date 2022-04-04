@@ -8,33 +8,81 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav id="nav-bar">
-      <ul id="nav-list">    
-          <li><a href="home.asp">Home</a></li>
-          <li><a href="purchase.asp">Buy now!</a></li>
-          <li><a href="contact.asp">Contact</a></li>
-      </ul>
-    </nav>
-
     <header id="header">
-        <h1>downloadable ram!!!!</h1>
-        
+      <nav id="nav-bar">
+        <ul id="nav-list">
+            <li class="nav-item"><img src="images/ram logo.jpg" id="header-img"></li>    
+            <li class="nav-item"><a href="#header" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#purchase" class="nav-link">Buy now!</a></li>
+            <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
     </header>
 
+    <title1>
+        <h1 id="home">downloadable ram!!!!</h1>
+    </title1>
+
     <advertLeft>
-      <h2>poo</h2>
+      <img src="Images/RSLadvert.png" id="ad">
     </advertLeft>
     <pics>
-      <h3>pooo2</h3>
-      <img src="https://i.insider.com/604fc6c2fe6a340019aceca3?width=600&format=jpeg&auto=webp" id="header-img">
+      <img src="https://i.insider.com/604fc6c2fe6a340019aceca3?width=600&format=jpeg&auto=webp" id="ram">
+      <iframe id="video" height="360" width="640" src="https://www.youtube.com/embed/v3J9VtWMEE8" frameborder="0" allowfullscreen></iframe> 
     </pics>
 
-    <options></options>
-    <email></email>
-    <advertRight></advertRight>
+    <options id="purchase">
+      <div id="container">
+        <div class="choices" id="4gb">
+          <div class="level">4gb</div>
+          <h2>$30</h2>
+          <ol class="filler-text">
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+        </div>
 
-    <footer>
-      <h4>pasodfpsdoj</h4>
+        <div class="choices" id="8gb">
+          <div class="level">8gb</div>
+          <h2>$55</h2>
+          <ol class="filler-text">
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+        </div>
+
+        <div class="choices" id="16gb">
+          <div class="level">16gb</div>
+          <h2>$100</h2>
+          <ol class="filler-text">
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+        </div>
+
+      </div>
+    </options>
+    <email1>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <h2>If you would like to recieve offers and promotions please enter your email below</h2>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email@example.com" id="email" required>
+        <input type="submit" value="Submit">
+      </form>
+    </email1>
+    <advertRight>
+      <img src="Images/RSLadvert.png" id="ad">
+    </advertRight>
+
+    <footer id="footer">
+      <h4>this is the footer tm</h4>
     </footer>
 	<!--<script src="index.js"></script>-->
   </body>

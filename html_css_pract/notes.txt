@@ -176,5 +176,11 @@ CSS-GRID
                                          howdy howdy howdy
                                         goodbye goodbye goodbye"
                     grid-area: hello; places the item in the "hello" area of the grid
-    
-    
+                    grid-area: without grid-template-areas
+                        grid-area: n/x/y/z (horizontal line to start at) / (vertical line to start at) / (horizontal line to end at) / (vertical line to end at)
+    use grid-template-rows and grid-template-columns: 
+        repeat() to create many rows/columns with the same dimensions
+            grid-template-rows: repeat(100, 50px) makes 100 rows of 50px height
+            grid-template-columns: repeat(2, 1fr 50px) 20px translates to repeat: 1fr 50px 1fr 50px 20px //5 columns
+            auto-fill can be used within repeat to make as many items that will fit the container. use with minmax for best results
+        minmax() to set min and max width of column
