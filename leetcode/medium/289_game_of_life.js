@@ -29,6 +29,7 @@ The next state is created by applying the above rules simultaneously to every ce
         }
     }
     
+    //unfortunately cant return a new board, so this for loop changes the board "in-place"
     for(var i = 0; i < board.length; i++) {
         for(var j = 0; j < board[i].length; j++) {
             board[i][j] = res[i][j];
@@ -126,8 +127,6 @@ var west = function(board,x,y) {
 
 
 /*
-solution works but isnt being accepted on leetcode.. weirdly written test cases or badly worded prompt
-
 Runtime: 62 ms, faster than 88.86% of JavaScript online submissions for Game of Life.
 Memory Usage: 42.2 MB, less than 76.39% of JavaScript online submissions for Game of Life.
 */
