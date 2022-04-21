@@ -1,12 +1,14 @@
-/*
-Given two binary strings a and b, return their sum as a binary string.
-*/
+// var str = "1010101111";
 
-/*
- * @param {string} a
- * @param {string} b
- * @return {string}
- */
+// var a = str.charAt(str.length-1);
+
+// var b = 15;
+
+// console.log(b + parseInt(a));
+
+// b%=2;
+// console.log(b);
+
 var addBinary = function(a, b) {
 
     if(a.length > b.length) {
@@ -36,7 +38,6 @@ var addBinary = function(a, b) {
     return res;
 };
 
-/*
-Runtime: 111 ms, faster than 25.12% of JavaScript online submissions for Add Binary.
-Memory Usage: 43 MB, less than 68.60% of JavaScript online submissions for Add Binary.
-*/
+console.log(addBinary("1010", "1011"));
+
+//expected: "10101"
