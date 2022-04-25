@@ -15,9 +15,22 @@ Given the head of a sorted linked list, delete all duplicates such that each ele
  * @return {ListNode}
  */
 var deleteDuplicates = function(head) {
-    
+    var temp = head.val;
+    var curr = head;
+
+    while(curr.next != null) {
+        if(temp == curr.next.val){
+            curr.next = curr.next.next;
+        } else {
+            temp = curr.next.val;
+            curr = curr.next;
+        }
+    }
+
+    return head;
 };
 
 /*
-
+Runtime: 85 ms, faster than 66.43% of JavaScript online submissions for Remove Duplicates from Sorted List.
+Memory Usage: 44.3 MB, less than 62.95% of JavaScript online submissions for Remove Duplicates from Sorted List.
 */
