@@ -13,7 +13,7 @@ var generate = function(numRows) {
     
     if(numRows === 1) {
         return res;
-    }else if(numRows > 30) {
+    }else if(numRows > 33) {
         return "no";
     }else{
         for(var i = 1; i < numRows; i++){
