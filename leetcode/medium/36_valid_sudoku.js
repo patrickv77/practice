@@ -43,10 +43,13 @@ var isValidSudoku = function(board) {
     var startingCells = [[0,0],[3,0],[6,0],[0,3],[3,3],[6,3],[0,6],[3,6],[6,6]];
     for(var i = 0; i < startingCells.length; i++){
         //get a 3x3 from board using helper method
-        var threeByThree = getThreeByThree(board, startingCells[i]);
-
-
+        var boxOK = checkThreeByThree(getThreeByThree(board, startingCells[i]));
+        if(!boxOK) {
+            return false;
+        }
     }
+
+    return true;
 };
 
 var checkLine = function(arr) {
@@ -79,21 +82,24 @@ var getThreeByThree = function(board, startPoint){
 };
 
 var checkThreeByThree = function(square) {
+    var checker = new Array(9);
 
+    for(var i = 0; i < square.length; i++) {
+        for(var j = 0; j < square[i].length; j++){
+            if(square[i][j] != '.') {
+                if(checker[square[i][j]-1] != 1) {
+                    checker[square[i][j]-1] = 1;
+                }else{
+                    return false;
+                }
+            }
+        }
+    }
+
+    return true;
 };
 
-var board = [["5","3",".",".","7",".",".",".","."]
-,["6",".",".","1","9","5",".",".","."]
-,[".","9","8",".",".",".",".","6","."]
-,["8",".",".",".","6",".",".",".","3"]
-,["4",".",".","8",".","3",".",".","1"]
-,["7",".",".",".","2",".",".",".","6"]
-,[".","6",".",".",".",".","2","8","."]
-,[".",".",".","4","1","9",".",".","5"]
-,[".",".",".",".","8",".",".","7","9"]];
-
-console.log(isValidSudoku(board));
-
 /*
-
+Runtime: 134 ms, faster than 25.19% of JavaScript online submissions for Valid Sudoku.
+Memory Usage: 46.6 MB, less than 37.11% of JavaScript online submissions for Valid Sudoku.
  */
