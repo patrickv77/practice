@@ -40,7 +40,13 @@ var isValidSudoku = function(board) {
     }
 
     //check 3x3s
+    var startingCells = [[0,0],[3,0],[6,0],[0,3],[3,3],[6,3],[0,6],[3,6],[6,6]];
+    for(var i = 0; i < startingCells.length; i++){
+        //get a 3x3 from board using helper method
+        var threeByThree = getThreeByThree(board, startingCells[i]);
 
+
+    }
 };
 
 var checkLine = function(arr) {
@@ -60,8 +66,16 @@ var checkLine = function(arr) {
     return true;
 };
 
-var getThreeByThree = function(board, startingCell){
-
+var getThreeByThree = function(board, startPoint){
+    var res = [];
+    for(i = startPoint[1]; i < startPoint[1]+3; i++) {
+        var tempArr = [];
+        for(j = startPoint[0]; j < startPoint[0]+3; j++) {
+            tempArr.push(board[i][j])
+        }
+        res.push(tempArr);
+    }
+    return res;
 };
 
 var checkThreeByThree = function(square) {

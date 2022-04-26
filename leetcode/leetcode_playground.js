@@ -58,5 +58,16 @@ var board = [["5","3",".",".","7",".",".",".","."]
 ,[".",".",".","4","1","9",".",".","5"]
 ,[".",".",".",".","8",".",".","7","9"]];
 
-console.log(board[0][0]);
-console.log(board[1][0]);
+var getThreeByThree = function(board, startPoint){
+    var res = [];
+    for(i = startPoint[1]; i < startPoint[1]+3; i++) {
+        var tempArr = [];
+        for(j = startPoint[0]; j < startPoint[0]+3; j++) {
+            tempArr.push(board[i][j])
+        }
+        res.push(tempArr);
+    }
+    return res;
+};
+
+console.log(getThreeByThree(board,[3,6]));
