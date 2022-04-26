@@ -15,9 +15,70 @@ Only the filled cells need to be validated according to the mentioned rules.
  * @return {boolean}
  */
 var isValidSudoku = function(board) {
-    
+    //check each horizontal
+    for(var i = 0; i < board.length; i++) {
+        var horizontalOK = checkLine(board[i]);
+        if(!horizontalOK){
+            console.log("horizontal not ok");
+            return false;
+        }
+    }
+
+    //check each vertical
+    for(var i = 0; i < board[0].length; i++) {
+        var tempArr = new Array(9);
+
+        //populate tempArr to pass into checker method
+        for(var j = 0; j < board.length; j++) {
+            tempArr[j] = board[j][i];
+        }
+
+        var verticalOK = checkLine(tempArr);
+        if(!verticalOK) {
+            return false;
+        }
+    }
+
+    //check 3x3s
+
 };
 
+var checkLine = function(arr) {
+    var checker = new Array(9);
+
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] != '.'){
+            if(checker[arr[i]-1] != 1) {
+                checker[arr[i]-1] = 1;
+            }else{
+                
+                return false;
+            }
+        }
+    }
+
+    return true;
+};
+
+var getThreeByThree = function(board, startingCell){
+
+};
+
+var checkThreeByThree = function(square) {
+
+};
+
+var board = [["5","3",".",".","7",".",".",".","."]
+,["6",".",".","1","9","5",".",".","."]
+,[".","9","8",".",".",".",".","6","."]
+,["8",".",".",".","6",".",".",".","3"]
+,["4",".",".","8",".","3",".",".","1"]
+,["7",".",".",".","2",".",".",".","6"]
+,[".","6",".",".",".",".","2","8","."]
+,[".",".",".","4","1","9",".",".","5"]
+,[".",".",".",".","8",".",".","7","9"]];
+
+console.log(isValidSudoku(board));
 
 /*
 
