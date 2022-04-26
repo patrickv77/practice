@@ -60,7 +60,6 @@ var checkLine = function(arr) {
             if(checker[arr[i]-1] != 1) {
                 checker[arr[i]-1] = 1;
             }else{
-                
                 return false;
             }
         }
