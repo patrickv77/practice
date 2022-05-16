@@ -19,9 +19,32 @@ Two binary trees are considered the same if they are structurally identical, and
  * @return {boolean}
  */
 var isSameTree = function(p, q) {
+    var res = true;
+
+    traverse = function(nodeP, nodeQ) {
+        if(!nodeP && !nodeQ){
+            return;
+        }else if(nodeP && !nodeQ){
+            res = false;
+            return;
+        }else if(!nodeP && nodeQ){
+            res = false;
+            return;
+        }else{
+            traverse(nodeP.left, nodeQ.left);
+            if(nodeP.val != nodeQ.val){
+                res = false;
+            }
+            traverse(nodeP.right, nodeQ.right);
+        }
+    }
     
+    traverse(p,q);
+    
+    return res;
 };
 
 /*
-
+Runtime: 65 ms, faster than 77.18% of JavaScript online submissions for Same Tree.
+Memory Usage: 42.1 MB, less than 76.78% of JavaScript online submissions for Same Tree.
 */
