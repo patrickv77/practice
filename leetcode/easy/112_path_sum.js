@@ -18,10 +18,25 @@ A leaf is a node with no children.
  * @param {number} targetSum
  * @return {boolean}
  */
+
 var hasPathSum = function(root, targetSum) {
-    
+    return dfs(root, targetSum);
+    // T.C: O(N)
+    // S.C: O(H)
 };
 
-/*
+const dfs = (root, target) => {
+    if (!root) {
+        return false;
+    }
+    if (!root.left && !root.right) {
+        return target - root.val === 0;
+    }
+    return dfs(root.left, target - root.val) || 
+        dfs(root.right, target - root.val);
+}
 
+/*
+Runtime: 110 ms, faster than 27.62% of JavaScript online submissions for Path Sum.
+Memory Usage: 46.3 MB, less than 13.67% of JavaScript online submissions for Path Sum.
  */
