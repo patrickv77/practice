@@ -76,3 +76,7 @@ var num = 12344;
 
 console.log(num%9);
 
+var numsSum = 0, res = 0;
+
+console.log(res);
+console.log(numsSum);
