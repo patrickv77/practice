@@ -72,13 +72,7 @@
 
 // console.log(getThreeByThree(board,[3,6]));
 
-var num = 123456;
+var num = 12344;
 
-var arr = Array.from(num.toString()).map(Number);
-
-num=0;
-arr.forEach(x => num += x);
-
-
-console.log(num);
+console.log(num%9);
 
