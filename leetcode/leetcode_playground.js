@@ -48,26 +48,37 @@
 //     console.log(a.charAt(i));
 //}
 
-var board = [["5","3",".",".","7",".",".",".","."]
-,["6",".",".","1","9","5",".",".","."]
-,[".","9","8",".",".",".",".","6","."]
-,["8",".",".",".","6",".",".",".","3"]
-,["4",".",".","8",".","3",".",".","1"]
-,["7",".",".",".","2",".",".",".","6"]
-,[".","6",".",".",".",".","2","8","."]
-,[".",".",".","4","1","9",".",".","5"]
-,[".",".",".",".","8",".",".","7","9"]];
+// var board = [["5","3",".",".","7",".",".",".","."]
+// ,["6",".",".","1","9","5",".",".","."]
+// ,[".","9","8",".",".",".",".","6","."]
+// ,["8",".",".",".","6",".",".",".","3"]
+// ,["4",".",".","8",".","3",".",".","1"]
+// ,["7",".",".",".","2",".",".",".","6"]
+// ,[".","6",".",".",".",".","2","8","."]
+// ,[".",".",".","4","1","9",".",".","5"]
+// ,[".",".",".",".","8",".",".","7","9"]];
 
-var getThreeByThree = function(board, startPoint){
-    var res = [];
-    for(i = startPoint[1]; i < startPoint[1]+3; i++) {
-        var tempArr = [];
-        for(j = startPoint[0]; j < startPoint[0]+3; j++) {
-            tempArr.push(board[i][j])
-        }
-        res.push(tempArr);
-    }
-    return res;
-};
+// var getThreeByThree = function(board, startPoint){
+//     var res = [];
+//     for(i = startPoint[1]; i < startPoint[1]+3; i++) {
+//         var tempArr = [];
+//         for(j = startPoint[0]; j < startPoint[0]+3; j++) {
+//             tempArr.push(board[i][j])
+//         }
+//         res.push(tempArr);
+//     }
+//     return res;
+// };
 
-console.log(getThreeByThree(board,[3,6]));
+// console.log(getThreeByThree(board,[3,6]));
+
+var num = 123456;
+
+var arr = Array.from(num.toString()).map(Number);
+
+num=0;
+arr.forEach(x => num += x);
+
+
+console.log(num);
+
