@@ -40,3 +40,5 @@ const dfs = (root, target) => {
 Runtime: 110 ms, faster than 27.62% of JavaScript online submissions for Path Sum.
 Memory Usage: 46.3 MB, less than 13.67% of JavaScript online submissions for Path Sum.
  */
+
+//not my code, only added to study it
