@@ -46,4 +46,3 @@ var solution = function(isBadVersion) {
 Runtime: 82 ms, faster than 43.59% of JavaScript online submissions for First Bad Version.
 Memory Usage: 42.2 MB, less than 19.90% of JavaScript online submissions for First Bad Version.
  */
-
