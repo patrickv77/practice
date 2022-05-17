@@ -72,11 +72,47 @@
 
 // console.log(getThreeByThree(board,[3,6]));
 
-    var n = 00000010100101000001111010011100;
-    var str = n.toString(2);
-    var arr = n.toString().split("").reverse();
+var convert = function(s, numRows) {
+    if(numRows == 1){
+        return s;
+    }
 
-    console.log(n);
-    console.log(arr);
-    console.log(str);
-    console.log(n);
+    let arr = s.split("");
+    let matrix = [];
+
+    //init the grid matrix
+    for (let i = 0; i < numRows; i++) {
+        matrix[i] = []; 
+    }
+
+    let columnItr = 0, rowItr = 0;
+    for(let i = 0; i < arr.length; i++) {
+        if(rowItr == 0) {
+            while(rowItr < numRows && i < arr.length){
+                matrix[rowItr][columnItr] = arr[i];
+                rowItr++;
+                i++;
+            }
+            columnItr++;
+            i--;
+            rowItr -= 2;
+        }else{
+            matrix[rowItr][columnItr] = arr[i];
+            rowItr--;
+            columnItr++;
+        }
+    }
+
+    let res = "";
+    for(let i = 0; i < matrix.length; i++) {
+        for(let j = 0; j < matrix[i].length; j++) {
+            if(matrix[i][j] != undefined) {
+                res += matrix[i][j];
+            }
+        }
+    }
+
+    return res;
+};
+
+console.log(convert("PAYPALISHIRING",4));
