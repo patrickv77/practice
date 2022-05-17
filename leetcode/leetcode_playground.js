@@ -72,11 +72,11 @@
 
 // console.log(getThreeByThree(board,[3,6]));
 
-var num = 12344;
+    var n = 00000010100101000001111010011100;
+    var str = n.toString(2);
+    var arr = n.toString().split("").reverse();
 
-console.log(num%9);
-
-var numsSum = 0, res = 0;
-
-console.log(res);
-console.log(numsSum);
+    console.log(n);
+    console.log(arr);
+    console.log(str);
+    console.log(n);
