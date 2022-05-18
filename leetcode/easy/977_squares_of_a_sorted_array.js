@@ -16,8 +16,7 @@ var sortedSquares = function(nums) {
     });
 };
 
-console.log(sortedSquares([-4,-1,0,3,10]));
-
 /*
-
+Runtime: 163 ms, faster than 32.96% of JavaScript online submissions for Squares of a Sorted Array.
+Memory Usage: 48 MB, less than 98.38% of JavaScript online submissions for Squares of a Sorted Array.
  */
