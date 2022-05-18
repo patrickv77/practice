@@ -1,0 +1,2 @@
+CREATE DATABASE 196_delete_duplicate_emails;
+USE 196_delete_duplicate_emails;
