@@ -72,47 +72,72 @@
 
 // console.log(getThreeByThree(board,[3,6]));
 
-var convert = function(s, numRows) {
-    if(numRows == 1){
-        return s;
-    }
+// var convert = function(s, numRows) {
+//     if(numRows == 1){
+//         return s;
+//     }
 
-    let arr = s.split("");
-    let matrix = [];
+//     let arr = s.split("");
+//     let matrix = [];
 
-    //init the grid matrix
-    for (let i = 0; i < numRows; i++) {
-        matrix[i] = []; 
-    }
+//     //init the grid matrix
+//     for (let i = 0; i < numRows; i++) {
+//         matrix[i] = []; 
+//     }
 
-    let columnItr = 0, rowItr = 0;
-    for(let i = 0; i < arr.length; i++) {
-        if(rowItr == 0) {
-            while(rowItr < numRows && i < arr.length){
-                matrix[rowItr][columnItr] = arr[i];
-                rowItr++;
-                i++;
-            }
-            columnItr++;
-            i--;
-            rowItr -= 2;
-        }else{
-            matrix[rowItr][columnItr] = arr[i];
-            rowItr--;
-            columnItr++;
-        }
-    }
+//     let columnItr = 0, rowItr = 0;
+//     for(let i = 0; i < arr.length; i++) {
+//         if(rowItr == 0) {
+//             while(rowItr < numRows && i < arr.length){
+//                 matrix[rowItr][columnItr] = arr[i];
+//                 rowItr++;
+//                 i++;
+//             }
+//             columnItr++;
+//             i--;
+//             rowItr -= 2;
+//         }else{
+//             matrix[rowItr][columnItr] = arr[i];
+//             rowItr--;
+//             columnItr++;
+//         }
+//     }
 
-    let res = "";
-    for(let i = 0; i < matrix.length; i++) {
-        for(let j = 0; j < matrix[i].length; j++) {
-            if(matrix[i][j] != undefined) {
-                res += matrix[i][j];
-            }
-        }
-    }
+//     let res = "";
+//     for(let i = 0; i < matrix.length; i++) {
+//         for(let j = 0; j < matrix[i].length; j++) {
+//             if(matrix[i][j] != undefined) {
+//                 res += matrix[i][j];
+//             }
+//         }
+//     }
 
-    return res;
+//     return res;
+// };
+
+// console.log(convert("PAYPALISHIRING",4));
+
+// let k = 3;
+// let nums = [1,2,3,4,5,6,7];
+
+// k = k%nums.length;
+// const indexFromEnd = nums.length - k;
+
+// let arrRight = nums.slice(0, indexFromEnd), arrLeft = nums.slice(indexFromEnd);
+
+// console.log(arrLeft.concat(arrRight));
+
+var rotate = function(nums, k) {
+    //modulo k by nums.length, if you rotate k nums.length times, you get the same array
+    k = k%nums.length;
+    const indexFromEnd = nums.length - k;
+
+    let arrRight = nums.slice(0, indexFromEnd), arrLeft = nums.slice(indexFromEnd);
+
+    console.log(arrLeft);
+    console.log(arrRight);
+
+    return arrLeft.concat(arrRight);
 };
 
-console.log(convert("PAYPALISHIRING",4));
+console.log(rotate([1,2,3,4,5,6,7],3));
