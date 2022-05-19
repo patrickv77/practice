@@ -43,18 +43,6 @@ UPDATE albums
 SET release_year = 1982 
 WHERE id = 1;
 
-CREATE DATABASE big_countries;
-USE big_countries;
-CREATE TABLE world (
-  id INT NOT NULL AUTO_INCREMENT,
-  name VARCHAR(255) NOT NULL,
-  continent VARCHAR(255) NOT NULL,
-  area INT, 
-  population INT,
-  gdp BIGINT,
-  PRIMARY KEY(id)
-);
-
 SELECT * FROM albums
 WHERE release_year < 2000;
 
