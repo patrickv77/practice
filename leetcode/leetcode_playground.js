@@ -147,19 +147,23 @@
 // arr.push(arr.splice(2,1)[0]);
 // console.log(arr);
 
-const moveZeroes = nums => {
-    let i = 0,  j = 0;
-    while (i < nums.length) {
-      if (nums[i] != 0) {
-          if (i!==j) {
-              nums[j] = nums[i];
-              nums[i] = 0;
-          }
-        j++;
-      }  
-      i++;
-    }
-    return nums;
-  };
+// const moveZeroes = nums => {
+//     let i = 0,  j = 0;
+//     while (i < nums.length) {
+//       if (nums[i] != 0) {
+//           if (i!==j) {
+//               nums[j] = nums[i];
+//               nums[i] = 0;
+//           }
+//         j++;
+//       }  
+//       i++;
+//     }
+//     return nums;
+//   };
 
-console.log(moveZeroes([0,0,0,1,2,3,0,0,0,4,5,0,0,0,0,0,0]));
+// console.log(moveZeroes([0,0,0,1,2,3,0,0,0,4,5,0,0,0,0,0,0]));
+
+
+let arr = [1,2,3,4,7,11,12];
+console.log(arr[1] + arr[4]);
