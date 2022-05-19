@@ -127,17 +127,39 @@
 
 // console.log(arrLeft.concat(arrRight));
 
-var rotate = function(nums, k) {
-    //modulo k by nums.length, if you rotate k nums.length times, you get the same array
-    k = k%nums.length;
-    const indexFromEnd = nums.length - k;
+// var rotate = function(nums, k) {
+//     //modulo k by nums.length, if you rotate k nums.length times, you get the same array
+//     k = k%nums.length;
+//     const indexFromEnd = nums.length - k;
 
-    let arrRight = nums.slice(0, indexFromEnd), arrLeft = nums.slice(indexFromEnd);
+//     let arrRight = nums.slice(0, indexFromEnd), arrLeft = nums.slice(indexFromEnd);
 
-    console.log(arrLeft);
-    console.log(arrRight);
+//     console.log(arrLeft);
+//     console.log(arrRight);
 
-    return arrLeft.concat(arrRight);
-};
+//     return arrLeft.concat(arrRight);
+// };
 
-console.log(rotate([1,2,3,4,5,6,7],3));
+// console.log(rotate([1,2,3,4,5,6,7],3));
+
+// let arr = [1,2,3,4,5,6,7];
+
+// arr.push(arr.splice(2,1)[0]);
+// console.log(arr);
+
+const moveZeroes = nums => {
+    let i = 0,  j = 0;
+    while (i < nums.length) {
+      if (nums[i] != 0) {
+          if (i!==j) {
+              nums[j] = nums[i];
+              nums[i] = 0;
+          }
+        j++;
+      }  
+      i++;
+    }
+    return nums;
+  };
+
+console.log(moveZeroes([0,0,0,1,2,3,0,0,0,4,5,0,0,0,0,0,0]));
