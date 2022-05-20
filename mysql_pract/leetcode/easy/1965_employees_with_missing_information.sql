@@ -12,3 +12,19 @@ insert into Salaries (employee_id, salary) values ('5', '76071');
 insert into Salaries (employee_id, salary) values ('1', '22517');
 insert into Salaries (employee_id, salary) values ('4', '63539');
 
+SELECT * FROM Employees;
+SELECT * FROM Salaries;
+
+SELECT employee_id FROM Employees 
+WHERE employee_id NOT IN 
+	(SELECT employee_id FROM Salaries)
+UNION
+SELECT employee_id FROM Salaries 
+WHERE employee_id NOT IN 
+	(SELECT employee_id FROM Employees)
+order by employee_id asc;
+
+/*
+Runtime: 568 ms, faster than 44.20% of MySQL online submissions for Employees With Missing Information.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for Employees With Missing Information.
+*/
