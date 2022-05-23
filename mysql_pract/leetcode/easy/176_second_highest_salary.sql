@@ -14,6 +14,6 @@ WHERE salary NOT IN (SELECT MAX(salary) FROM Employee);
 
 /*
 Runtime: 335 ms, faster than 14.72% of MySQL online submissions for Second Highest Salary.
-Memory Usage: 0B, less than 100.00% of MySQL online submissions for Second Highest Salary.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for Second Highest Salary..
 */
 
