@@ -13,3 +13,11 @@ insert into Views (article_id, author_id, viewer_id, view_date) values ('3', '4'
 
 SELECT * FROM Views;
 
+SELECT DISTINCT author_id AS id FROM Views
+WHERE author_id = viewer_id
+ORDER BY author_id ASC;
+
+/*
+Runtime: 499 ms, faster than 33.61% of MySQL online submissions for Article Views I.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for Article Views I.
+*/
