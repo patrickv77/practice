@@ -15,3 +15,12 @@ insert into DailySales (date_id, make_name, lead_id, partner_id) values ('2020-1
 insert into DailySales (date_id, make_name, lead_id, partner_id) values ('2020-12-7', 'honda', '2', '1');
 
 SELECT * FROM DailySales;
+
+SELECT date_id, make_name, COUNT(DISTINCT lead_id) AS unique_leads, COUNT(DISTINCT partner_id) AS unique_partners 
+FROM DailySales
+GROUP BY date_id, make_name;
+
+/*
+Runtime: 737 ms, faster than 15.31% of MySQL online submissions for Daily Leads and Partners.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for Daily Leads and Partners.
+*/
