@@ -16,3 +16,12 @@ insert into Activity (user_id, session_id, activity_date, activity_type) values 
 insert into Activity (user_id, session_id, activity_date, activity_type) values ('4', '3', '2019-06-25', 'end_session');
 
 SELECT * FROM Activity;
+
+SELECT activity_date as day, COUNT(DISTINCT user_id) as active_users from Activity
+WHERE activity_date BETWEEN '2019-06-28' AND '2019-07-27'
+GROUP BY activity_date;
+
+/*
+Runtime: 682 ms, faster than 12.29% of MySQL online submissions for User Activity for the Past 30 Days I.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for User Activity for the Past 30 Days I.
+*/
