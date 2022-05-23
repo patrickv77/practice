@@ -18,3 +18,13 @@ insert into Transactions (transaction_id, visit_id, amount) values ('9', '5', '2
 insert into Transactions (transaction_id, visit_id, amount) values ('12', '1', '910');
 insert into Transactions (transaction_id, visit_id, amount) values ('13', '2', '970');
 
+SELECT customer_id, COUNT(visit_id) as count_no_trans
+FROM Visits
+WHERE visit_id NOT IN (
+    SELECT  visit_id FROM Transactions)
+GROUP BY customer_id;
+
+/*
+Runtime: 1171 ms, faster than 64.24% of MySQL online submissions for Customer Who Visited but Did Not Make Any Transactions.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for Customer Who Visited but Did Not Make Any Transactions.
+*/
