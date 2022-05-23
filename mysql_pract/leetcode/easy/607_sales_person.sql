@@ -25,3 +25,12 @@ SELECT * FROM SalesPerson;
 SELECT * FROM Company;
 SELECT * FROM Orders;
 
+SELECT name FROM SalesPerson
+WHERE sales_id NOT IN (
+	SELECT sales_id FROM Orders 
+	WHERE com_id IN (SELECT com_id from Company WHERE name = 'RED'));
+    
+/*
+Runtime: 1313 ms, faster than 39.83% of MySQL online submissions for Sales Person.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for Sales Person.
+*/
