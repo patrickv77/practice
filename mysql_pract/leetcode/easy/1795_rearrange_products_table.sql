@@ -13,7 +13,7 @@ UNION
 Select product_id,"store2" AS STORE ,store2 AS price FROM Products WHERE  store2 IS NOT NULL
 UNION
 Select product_id,"store3" AS STORE ,store3 AS price FROM Products WHERE  store3 IS NOT NULL;
-
+d
 /*
 Runtime: 512 ms, faster than 61.80% of MySQL online submissions for Rearrange Products Table.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Rearrange Products Table.
