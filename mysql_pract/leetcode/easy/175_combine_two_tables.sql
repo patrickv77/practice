@@ -1,0 +1,2 @@
+CREATE DATABASE 175_combine_two_tables;
+USE 175_combine_two_tables;
