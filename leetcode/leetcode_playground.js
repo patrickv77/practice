@@ -174,22 +174,28 @@
 
 // console.log(arr);
 
-const hm = new Map();
+// const hm = new Map();
 
-hm.set("a",1);
-hm.set("b",2);
-hm.set("c",2);
-hm.set("d",1);
-hm.set("e",3);
-hm.set("f",44);
-hm.set("g",5);
-hm.set("h",1);
+// hm.set("a",1);
+// hm.set("b",2);
+// hm.set("c",2);
+// hm.set("d",1);
+// hm.set("e",3);
+// hm.set("f",44);
+// hm.set("g",5);
+// hm.set("h",1);
 
-const hmItr = hm.keys();
+// const hmItr = hm.keys();
 
-let temp = hmItr.next().value;
-while(temp != undefined) {
-    console.log(temp);
-    temp = hmItr.next().value;
-}
+// let temp = hmItr.next().value;
+// while(temp != undefined) {
+//     console.log(temp);
+//     temp = hmItr.next().value;
+// }
 
+var s = "abcdefghijklmnopqrstuvwxyz";
+console.log(s.charCodeAt(0));
+
+let arr = new Array(26);
+arr.fill(0);
+console.log(arr[25]);
