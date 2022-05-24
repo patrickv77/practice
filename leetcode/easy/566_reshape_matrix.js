@@ -15,9 +15,29 @@ If the reshape operation with given parameters is possible and legal, output the
  * @return {number[][]}
  */
 var matrixReshape = function(mat, r, c) {
-    
+    let numRows = mat.length, numCols = mat[0].length;
+
+    if((r * c) !== (numRows * numCols)) return mat;
+
+    let arr = [];
+    for(let i = 0; i < mat.length; i++) {
+        arr = arr.concat(mat[i]);
+    }
+
+    let res = [];
+    let arrItr = 0;
+    for(let i = 0; i < r; i++) {
+        res.push([]);
+        for(let j = 0; j < c; j++) {
+            res[i].push(arr[arrItr]);
+            arrItr++;
+        }
+    }
+
+    return res;
 };
 
 /*
-
+Runtime: 149 ms, faster than 8.64% of JavaScript online submissions for Reshape the Matrix.
+Memory Usage: 47.5 MB, less than 8.81% of JavaScript online submissions for Reshape the Matrix.
 */
