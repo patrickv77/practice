@@ -10,34 +10,37 @@ The first integer of each row is greater than the last integer of the previous r
  * @param {number} target
  * @return {boolean}
  */
-var searchMatrix = function(matrix, target) {
-    var findRow = function(matrix, target) {
-        let numRows = matrix.length;
-        let low = 0, high = numRows - 1;
-        let mid = Math.floor((high + low) / 2);
+var searchMatrix = function(matrix, target) {   
+    if(matrix[0][0] > target) return false;
+    if(matrix[matrix.length-1][matrix[0].length-1] < target) return false;
 
-        let rowFound = false;
-        while(!rowFound) {
-            
-            if(matrix[mid][0] <= target && matrix[mid][matrix[mid].length-1] >= 0) {
-                rowFound = true;
+    var findRow = function(matrix, target) {
+        let low = 0, high = matrix.length - 1;
+
+        while(low <= high) {
+            if(matrix[low][0] <= target && matrix[low][matrix[low].length-1] >= target) {
+                return low;
             }
 
-            if(mid === low || mid === high) {
+            if(matrix[high][0] <= target && matrix[high][matrix[high].length-1] >= target) {
+                return high;
+            }
+
+            let mid = Math.floor((low + high) / 2);
+            if(matrix[mid][0] <= target && matrix[mid][matrix[mid].length-1] >= target) {
                 return mid;
             }
 
-            if(matrix[mid][0] > target) {
-                high = mid-1;
-                mid = Math.floor((high + low) / 2);
-            } else if (matrix[mid][0] < target) {
+            if (matrix[mid][0] < target && matrix[mid][matrix[mid].length-1] < target) {
                 low = mid + 1;
-                mid = Math.floor((high + low) / 2);
-            } else {
-                rowFound = true;
+            }
+
+            if (matrix[mid][0] > target) {
+                high = mid - 1;
             }
         }
-        return mid;
+        
+        return low;
     }
 
     let row  = 0;
@@ -56,12 +59,7 @@ var searchMatrix = function(matrix, target) {
     return false;
 };
 
-console.log(searchMatrix([[1],[3]],3));
-
-
-
-
-
 /*
-
+Runtime: 128 ms, faster than 5.13% of JavaScript online submissions for Search a 2D Matrix.
+Memory Usage: 42.5 MB, less than 27.48% of JavaScript online submissions for Search a 2D Matrix.
  */
