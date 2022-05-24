@@ -164,13 +164,32 @@
 
 // console.log(moveZeroes([0,0,0,1,2,3,0,0,0,4,5,0,0,0,0,0,0]));
 
-let arr = [];
-let arr1 = [[1,3,5,7],[10,11,16,20],[23,30,34,60]];
+// let arr = [];
+// let arr1 = [[1,3,5,7],[10,11,16,20],[23,30,34,60]];
 
-arr = arr.concat(arr1[0]);
-arr = arr.concat(arr1[1]);
-arr = arr.concat(arr1[2]);
+// arr = arr.concat(arr1[0]);
+// arr = arr.concat(arr1[1]);
+// arr = arr.concat(arr1[2]);
 
 
-console.log(arr);
+// console.log(arr);
+
+const hm = new Map();
+
+hm.set("a",1);
+hm.set("b",2);
+hm.set("c",2);
+hm.set("d",1);
+hm.set("e",3);
+hm.set("f",44);
+hm.set("g",5);
+hm.set("h",1);
+
+const hmItr = hm.keys();
+
+let temp = hmItr.next().value;
+while(temp != undefined) {
+    console.log(temp);
+    temp = hmItr.next().value;
+}
 
