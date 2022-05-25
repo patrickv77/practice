@@ -19,9 +19,18 @@ Return true if there is a cycle in the linked list. Otherwise, return false.
  * @return {boolean}
  */
 var hasCycle = function(head) {
-    
+    let fast = head;
+    while(fast && fast.next) {
+        fast = fast.next.next;
+        head = head.next
+        if(head === fast) {
+            return true;
+        }
+    }
+    return false;
 };
 
 /*
-
+Runtime: 91 ms, faster than 60.31% of JavaScript online submissions for Linked List Cycle.
+Memory Usage: 45.2 MB, less than 32.70% of JavaScript online submissions for Linked List Cycle.
 */
