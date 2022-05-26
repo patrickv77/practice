@@ -23,5 +23,5 @@ GROUP BY activity_date;
 
 /*
 Runtime: 682 ms, faster than 12.29% of MySQL online submissions for User Activity for the Past 30 Days I.
-Memory Usage: 0B, less than 100.00% of MySQL online submissions for User Activity for the Past 30 Days I.
+Memory Usage: 0B, less than 100.00% of MySQL online submissions for User Activity for the Past 30 Days I.	
 */
