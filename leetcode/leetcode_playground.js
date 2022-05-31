@@ -200,3 +200,6 @@
 // arr.fill(0);
 // console.log(arr[25]);
 
+let arr = ['[','('];
+
+console.log(arr.indexOf('a'));
