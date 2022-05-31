@@ -193,9 +193,10 @@
 //     temp = hmItr.next().value;
 // }
 
-var s = "abcdefghijklmnopqrstuvwxyz";
-console.log(s.charCodeAt(0));
+// var s = "abcdefghijklmnopqrstuvwxyz";
+// console.log(s.charCodeAt(0));
 
-let arr = new Array(26);
-arr.fill(0);
-console.log(arr[25]);
+// let arr = new Array(26);
+// arr.fill(0);
+// console.log(arr[25]);
+
