@@ -200,6 +200,12 @@
 // arr.fill(0);
 // console.log(arr[25]);
 
-let arr = ['[','('];
+// let arr = ['[','('];
 
-console.log(arr.indexOf('a'));
+// console.log(arr.indexOf('a'));
+
+let hm = new Map();
+hm.set('a',1);
+hm.delete('a');
+
+console.log(hm.size);
