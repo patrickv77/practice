@@ -10,10 +10,26 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
  * @param {number[]} prices
  * @return {number}
  */
- var maxProfit = function(prices) {
-    
+var maxProfit = function(prices) {
+    let min = prices[0], profit = 0;
+    for(let i = 1; i < prices.length; i++) {
+        if(min > prices[i]) {
+            min = prices[i];
+        }else{
+            if(min < prices[i]){
+                if((prices[i]-min) > profit) {
+                    profit = prices[i] - min;
+                }
+            }
+        }
+    }
+
+    return profit;
 };
 
-/*
+console.log(maxProfit([7,6,5,4,3,2,1]));
 
+/*
+Runtime: 107 ms, faster than 55.33% of JavaScript online submissions for Best Time to Buy and Sell Stock.
+Memory Usage: 51.9 MB, less than 32.10% of JavaScript online submissions for Best Time to Buy and Sell Stock.
 */
