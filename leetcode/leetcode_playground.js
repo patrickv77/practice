@@ -204,8 +204,12 @@
 
 // console.log(arr.indexOf('a'));
 
-let hm = new Map();
-hm.set('a',1);
-hm.delete('a');
+// let hm = new Map();
+// hm.set('a',1);
+// hm.delete('a');
 
-console.log(hm.size);
+// console.log(hm.size);
+
+let arr = [[1,2,3],[1,2,3],[1,2,3],[1,2,3],[1,2,3]];
+console.log(arr.length);
+console.log(arr[0].length);
