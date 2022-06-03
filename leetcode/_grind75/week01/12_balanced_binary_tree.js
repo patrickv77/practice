@@ -19,9 +19,24 @@ a binary tree in which the left and right subtrees of every node differ in heigh
  * @return {boolean}
  */
 var isBalanced = function(root) {
+    return getHeight(root) !== -1;
     
+    function getHeight(root) {
+        if(!root) {
+            return 0;
+        }
+        let left = getHeight(root.left);
+        let right = getHeight(root.right);
+        if(left == -1 || right == -1 || Math.abs(left - right) > 1) {
+            return -1;
+        }
+        return 1 + Math.max(left, right);
+    }
 };
 
 /*
-
+Runtime: 95 ms, faster than 61.64% of JavaScript online submissions for Balanced Binary Tree.
+Memory Usage: 47.7 MB, less than 28.26% of JavaScript online submissions for Balanced Binary Tree.
 */
+
+//not my code* just using for study
