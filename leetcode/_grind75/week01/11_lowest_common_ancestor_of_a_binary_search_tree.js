@@ -19,9 +19,23 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
  * @return {TreeNode}
  */
 var lowestCommonAncestor = function(root, p, q) {
-    
+    //If the value of p is less than the root and q is less than the root, go to the left
+    if (p.val < root.val && q.val < root.val) {
+        return lowestCommonAncestor(root.left, p, q);
+    }
+    //If the value of p is greater than the root and q is greater than the root, go to the right
+    else if (p.val > root.val && q.val > root.val) {
+        return lowestCommonAncestor(root.right, p, q);
+    }
+    //We found it!
+    else {
+        return root;
+    }
 };
 
 /*
-
+Runtime: 109 ms, faster than 55.30% of JavaScript online submissions for Lowest Common Ancestor of a Binary Search Tree.
+Memory Usage: 52 MB, less than 82.13% of JavaScript online submissions for Lowest Common Ancestor of a Binary Search Tree.
 */
+
+//not my code* just using for study
