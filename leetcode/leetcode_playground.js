@@ -220,3 +220,8 @@ let str = 'aaaaabbbbc';
 str = [...str];
 console.log(str);
 
+let arr = [];
+let a = 'a';
+arr = [...arr, a];
+
+console.log(arr);
