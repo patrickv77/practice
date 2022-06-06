@@ -12,36 +12,43 @@ int getMin() retrieves the minimum element in the stack.
 
 
 var MinStack = function() {
-    
+    this.stack = []
 };
 
 /*
- * @param {number} val
+ * @param {number} x
  * @return {void}
  */
-MinStack.prototype.push = function(val) {
-    
+MinStack.prototype.push = function(x) {
+    let min = this.stack.length === 0 ? x : this.stack[this.stack.length - 1].min
+    this.stack.push({val: x, min: Math.min(min, x)})
 };
 
 /*
  * @return {void}
  */
 MinStack.prototype.pop = function() {
-    
+    if(this.stack.length > 0){
+        this.stack.pop()
+    }
 };
 
 /*
  * @return {number}
  */
 MinStack.prototype.top = function() {
-    
+    if(this.stack.length > 0) {
+        return this.stack[this.stack.length - 1].val
+    }
 };
 
 /*
  * @return {number}
  */
 MinStack.prototype.getMin = function() {
-    
+    if(this.stack.length > 0) {
+        return this.stack[this.stack.length - 1].min
+    }
 };
 
 /** 
@@ -54,5 +61,8 @@ MinStack.prototype.getMin = function() {
  */
 
 /*
-
+Runtime: 118 ms, faster than 78.45% of JavaScript online submissions for Min Stack.
+Memory Usage: 49.8 MB, less than 58.97% of JavaScript online submissions for Min Stack.
 */
+
+//not my code** studying only
