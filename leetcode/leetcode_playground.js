@@ -215,10 +215,8 @@
 // console.log(arr[0].length);
 
 let hm = new Map();
+let str = 'aaaaabbbbc';
 
-hm.set('a', true);
-hm.set('A', false);
+str = [...str];
+console.log(str);
 
-if(hm.get('b')){
-    console.log('poo');
-}
