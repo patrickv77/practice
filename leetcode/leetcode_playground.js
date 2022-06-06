@@ -210,6 +210,15 @@
 
 // console.log(hm.size);
 
-let arr = [[1,2,3],[1,2,3],[1,2,3],[1,2,3],[1,2,3]];
-console.log(arr.length);
-console.log(arr[0].length);
+// let arr = [[1,2,3],[1,2,3],[1,2,3],[1,2,3],[1,2,3]];
+// console.log(arr.length);
+// console.log(arr[0].length);
+
+let hm = new Map();
+
+hm.set('a', true);
+hm.set('A', false);
+
+if(hm.get('b')){
+    console.log('poo');
+}
