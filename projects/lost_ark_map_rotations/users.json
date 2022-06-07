@@ -1,0 +1,36 @@
+{
+    "name": "jason",
+    "maps": {
+        "north vern": {
+            "blue": 1,
+            "purple": 2,
+            "gold": 1
+        },
+        "rohendel": {
+            "blue": 1,
+            "purple": 2,
+            "gold": 1
+        },
+        "yorn": {
+            "blue": 1,
+            "purple": 2,
+            "gold": 1
+        },
+        "feiton": {
+            "blue": 1,
+            "purple": 2,
+            "gold": 1
+        },
+        "punika": {
+            "blue": 1,
+            "purple": 2,
+            "gold": 1
+        },
+        "south vern": {
+            "blue": 1,
+            "purple": 2,
+            "gold": 1
+        }
+    },
+    "equalize": "yes"
+}
