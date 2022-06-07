@@ -43,12 +43,16 @@ Store values in an object:
     equalize: yes or no
 }
 
-//need a function to take region and map color as inputs and return [[a,b,c,d],[a,b,c,e],[a,b,c,f]] groups
+//need a function to take region and map color as inputs and return [{[A,B,C,D], numRuns}, {} etc] groups
+//while making groups, decrement map count if used and delete people who have 0 maps
 function makeGroups(region, mapColor){
-    return [[group(s)]]
+    return [{[A,B,C,D], numRuns}, {} etc]
 }
 
-
+//need a function that takes the users, region and map and returns an array [{name, number of maps},{},{}] sorted from most maps of that region/color to least maps of that region/color
+function sort(users, region, map){
+    return [{name, numMaps},{}]
+}
 
 
 
