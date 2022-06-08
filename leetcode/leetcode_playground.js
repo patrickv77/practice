@@ -214,14 +214,29 @@
 // console.log(arr.length);
 // console.log(arr[0].length);
 
-let hm = new Map();
-let str = 'aaaaabbbbc';
+// let hm = new Map();
+// let str = 'aaaaabbbbc';
 
-str = [...str];
-console.log(str);
+// str = [...str];
+// console.log(str);
+
+// let arr = [];
+// let a = 'a';
+// arr = [...arr, a];
+
+// console.log(arr);
+
 
 let arr = [];
-let a = 'a';
-arr = [...arr, a];
+let array = [77];
+let a = 'jason';
+let b = 'pat';
+let c = 'denise';
 
-console.log(arr);
+arr.push(a);
+arr.push(b);
+arr.push(c);
+
+array = [arr, ...array];
+
+console.log(array);

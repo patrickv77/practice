@@ -39,7 +39,7 @@
         "name": "patrick",
         "maps": {
             "north vern": {
-                "blue": 11,
+                "blue": 2,
                 "purple": 2,
                 "gold": 1
             },
@@ -75,7 +75,7 @@
         "name": "denise",
         "maps": {
             "north vern": {
-                "blue": 8,
+                "blue": 2,
                 "purple": 2,
                 "gold": 1
             },
@@ -111,7 +111,7 @@
         "name": "peter",
         "maps": {
             "north vern": {
-                "blue": 5,
+                "blue": 2,
                 "purple": 2,
                 "gold": 1
             },
@@ -147,7 +147,7 @@
         "name": "hara",
         "maps": {
             "north vern": {
-                "blue": 14,
+                "blue": 1,
                 "purple": 2,
                 "gold": 1
             },
@@ -183,7 +183,7 @@
         "name": "david",
         "maps": {
             "north vern": {
-                "blue": 6,
+                "blue": 1,
                 "purple": 2,
                 "gold": 1
             },
@@ -217,6 +217,42 @@
     },
     {
         "name": "taylor",
+        "maps": {
+            "north vern": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "rohendel": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "yorn": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "feiton": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "punika": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "south vern": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            }
+        },
+        "equalize": "no"
+    },
+    {
+        "name": "kishan",
         "maps": {
             "north vern": {
                 "blue": 1,
