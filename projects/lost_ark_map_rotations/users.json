@@ -3,7 +3,7 @@
         "name": "jason",
         "maps": {
             "north vern": {
-                "blue": 1,
+                "blue": 2,
                 "purple": 2,
                 "gold": 1
             },
@@ -39,7 +39,7 @@
         "name": "patrick",
         "maps": {
             "north vern": {
-                "blue": 1,
+                "blue": 11,
                 "purple": 2,
                 "gold": 1
             },
@@ -75,7 +75,7 @@
         "name": "denise",
         "maps": {
             "north vern": {
-                "blue": 1,
+                "blue": 8,
                 "purple": 2,
                 "gold": 1
             },
@@ -106,5 +106,149 @@
             }
         },
         "equalize": "yes"
+    },
+    {
+        "name": "peter",
+        "maps": {
+            "north vern": {
+                "blue": 5,
+                "purple": 2,
+                "gold": 1
+            },
+            "rohendel": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "yorn": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "feiton": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "punika": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "south vern": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            }
+        },
+        "equalize": "no"
+    },
+    {
+        "name": "hara",
+        "maps": {
+            "north vern": {
+                "blue": 14,
+                "purple": 2,
+                "gold": 1
+            },
+            "rohendel": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "yorn": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "feiton": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "punika": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "south vern": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            }
+        },
+        "equalize": "no"
+    },
+    {
+        "name": "david",
+        "maps": {
+            "north vern": {
+                "blue": 6,
+                "purple": 2,
+                "gold": 1
+            },
+            "rohendel": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "yorn": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "feiton": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "punika": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "south vern": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            }
+        },
+        "equalize": "no"
+    },
+    {
+        "name": "taylor",
+        "maps": {
+            "north vern": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "rohendel": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "yorn": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "feiton": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "punika": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            },
+            "south vern": {
+                "blue": 1,
+                "purple": 2,
+                "gold": 1
+            }
+        },
+        "equalize": "no"
     }
 ]
