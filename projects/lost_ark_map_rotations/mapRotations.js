@@ -54,6 +54,8 @@ function sort(users, region, map){
     return [{name, numMaps},{}]
 }
 
+//function that reads data based on region and map color and returns an array => [['player name', numMaps]], where it only grabs players with numMaps > 0
+
 
 
 */
