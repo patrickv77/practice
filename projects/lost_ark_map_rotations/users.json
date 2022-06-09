@@ -3,7 +3,7 @@
         "name": "jason",
         "maps": {
             "north vern": {
-                "blue": 2,
+                "blue": 12,
                 "purple": 2,
                 "gold": 1
             },
@@ -39,7 +39,7 @@
         "name": "patrick",
         "maps": {
             "north vern": {
-                "blue": 2,
+                "blue": 16,
                 "purple": 2,
                 "gold": 1
             },
@@ -75,7 +75,7 @@
         "name": "denise",
         "maps": {
             "north vern": {
-                "blue": 2,
+                "blue": 22,
                 "purple": 2,
                 "gold": 1
             },
@@ -111,7 +111,7 @@
         "name": "peter",
         "maps": {
             "north vern": {
-                "blue": 2,
+                "blue": 6,
                 "purple": 2,
                 "gold": 1
             },
@@ -147,7 +147,7 @@
         "name": "hara",
         "maps": {
             "north vern": {
-                "blue": 1,
+                "blue": 3,
                 "purple": 2,
                 "gold": 1
             },
@@ -183,7 +183,7 @@
         "name": "david",
         "maps": {
             "north vern": {
-                "blue": 1,
+                "blue": 6,
                 "purple": 2,
                 "gold": 1
             },
@@ -219,7 +219,7 @@
         "name": "taylor",
         "maps": {
             "north vern": {
-                "blue": 1,
+                "blue": 2,
                 "purple": 2,
                 "gold": 1
             },

@@ -22,8 +22,8 @@ function playerSort(arr){
     });
 }
 
-
-console.log(playerSort(players));
+playerSort(players);
+console.log(players);
 
 /*
 takes a list of players [[playerName, numMaps], etc]
