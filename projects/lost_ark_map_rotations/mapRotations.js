@@ -59,7 +59,3 @@ function sort(users, region, map){
 
 
 */
-
-/*
-api key= AIzaSyAJ_opGe6kP1XBZSIwisLurLWAWJd5kX6g;
-*/
