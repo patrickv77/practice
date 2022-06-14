@@ -21,6 +21,23 @@ function playersWithMap(mapRegion, mapColor) {
 
 let players = playersWithMap(region,color);
 
+//takes the players with map array and trims it based on players that are available
+//players here array will be populated by checkboxes on the website, aka click checkboxes for players available at the moment and generate a new array based on that information
+function playersAvailable(playersHere, totalPlayers) {
+    let res = [];
+
+    for(let i = 0; i < totalPlayers.length; i++) {
+        let playerIndex = playersHere.indexOf(totalPlayers[i][0]);
+        if(playerIndex != -1) {
+            res = [...res, totalPlayers[i]];
+        }
+    }
+
+    return res;
+}
+
+let avail = ['denise', 'patrick', 'jason', 'kishan'];
+players = playersAvailable(avail,players);
 
 function playerSort(arr){
     return arr.sort((a,b) => {

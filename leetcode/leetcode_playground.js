@@ -227,16 +227,21 @@
 // console.log(arr);
 
 
-let arr = [];
-let array = [77];
-let a = 'jason';
-let b = 'pat';
-let c = 'denise';
+// let arr = [];
+// let array = [77];
+// let a = 'jason';
+// let b = 'pat';
+// let c = 'denise';
 
-arr.push(a);
-arr.push(b);
-arr.push(c);
+// arr.push(a);
+// arr.push(b);
+// arr.push(c);
 
-array = [arr, ...array];
+// array = [arr, ...array];
 
-console.log(array);
+// console.log(array);
+
+let arr = [['jason', 2],['pat', 1],['denise', 3]];
+let ppl = ['jason','pat'];
+
+console.log(ppl.indexOf(arr[0][0]));
