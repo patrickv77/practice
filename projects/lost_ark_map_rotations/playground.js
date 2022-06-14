@@ -3,17 +3,23 @@ const data = require('./users.json');
 
 //this would be inputted data
 let region = 'north vern';
-let mapColor = 'blue';
-let players = [];
+let color = 'blue';
 
-for(let i = 0; i < data.length; i++) {
-    if(data[i].maps[region][mapColor] >= 1){
-        let temp = [data[i].name, data[i].maps[region][mapColor]];
-        players.push(temp);
+//takes region and color and returns an array of players = [[data[0].name, data[0].maps['north vern'].blue],[data[1].name, data[1].maps['north vern'].blue],[data[2].name, data[2].maps['north vern'].blue]]etc
+function playersWithMap(mapRegion, mapColor) {
+    let res = [];
+
+    for(let i = 0; i < data.length; i++) {
+        if(data[i].maps[mapRegion][mapColor] >= 1){
+            let temp = [data[i].name, data[i].maps[mapRegion][mapColor]];
+            res.push(temp);
+        }
     }
+
+    return res;
 }
 
-//let players = [[data[0].name, data[0].maps['north vern'].blue],[data[1].name, data[1].maps['north vern'].blue],[data[2].name, data[2].maps['north vern'].blue]];
+let players = playersWithMap(region,color);
 
 
 function playerSort(arr){
