@@ -5,6 +5,21 @@ const data = require('./users.json');
 let region = 'north vern';
 let color = 'blue';
 
+function readCheckedBoxes() {
+    const btn = document.querySelector('#btn-players');
+    btn.addEventListener('click', (event) => {
+        let checkboxes = document.querySelectorAll('input[name="available players"]:checked');
+        let values = [];
+        checkboxes.forEach((checkbox) =>{
+            values.push(checkbox.value);
+        });
+    });
+    return values;
+}
+
+//once the function is working, uncomment
+//let avail = readCheckedBoxes();
+
 //takes region and color and returns an array of players = [[data[0].name, data[0].maps['north vern'].blue],[data[1].name, data[1].maps['north vern'].blue],[data[2].name, data[2].maps['north vern'].blue]]etc
 function playersWithMap(mapRegion, mapColor) {
     let res = [];
@@ -36,6 +51,7 @@ function playersAvailable(playersHere, totalPlayers) {
     return res;
 }
 
+//comment out once html file works
 let avail = ['denise', 'patrick', 'jason', 'kishan'];
 players = playersAvailable(avail,players);
 

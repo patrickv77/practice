@@ -8,6 +8,71 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-	      <!--<script src="index.js"></script>-->
+        <fieldset>
+            <legend>Which region are your maps located?</legend>
+            <input id="north vern" type="radio" name="map region" value="north vern">
+            <label for="north vern">North Vern</label><br>
+            <input id="rohendel" type="radio" name="map region" value="rohendel">
+            <label for="rohendel">Rohendel</label><br>
+            <input id="yorn" type="radio" name="map region" value="yorn">
+            <label for="yorn">Yorn</label><br>
+            <input id="feiton" type="radio" name="map region" value="feiton">
+            <label for="feiton">Feiton</label><br>
+            <input id="punika" type="radio" name="map region" value="punika">
+            <label for="punika">Punika</label><br>
+            <input id="south vern" type="radio" name="map region" value="south vern">
+            <label for="south vern">South Vern</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>What color maps are you running?</legend>
+            <input id="blue" type="radio" name="map color" value="blue">
+            <label for="blue">Blue</label>
+            <input id="purple" type="radio" name="map color" value="purple">
+            <label for="purple">Purple</label>
+            <input id="gold" type="radio" name="map color" value="gold">
+            <label for="gold">Gold</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Who is participating:</legend>
+            <input id="jason" type="checkbox" name="available players" value="jason" checked>
+            <label for="jason">Jason</label>
+            <input id="patrick" type="checkbox" name="available players" value="patrick"checked>
+            <label for="patrick">Patrick</label>
+            <input id="denise" type="checkbox" name="available players" value="denise" checked>
+            <label for="denise">Denise</label>
+            <input id="peter" type="checkbox" name="available players" value="peter" checked>
+            <label for="peter">Peter</label><br>
+            <input id="hara" type="checkbox" name="available players" value="hara">
+            <label for="hara">Hara</label>
+            <input id="kishan" type="checkbox" name="available players" value="kishan">
+            <label for="kishan">Kishan</label>
+            <input id="taylor" type="checkbox" name="available players" value="taylor">
+            <label for="taylor">Taylor</label>
+            <input id="david" type="checkbox" name="available players" value="david">
+            <label for="david">David</label>
+        </fieldset>
+        <p>
+            <button id="btn-players">submit available players list</button>
+        </p>
+
+
+        <!--
+        <script>
+            const btn = document.querySelector('#btn-players');
+                btn.addEventListener('click', (event) => {
+                let checkboxes = document.querySelectorAll('input[name="available players"]:checked');
+                let values = [];
+                checkboxes.forEach((checkbox) =>{
+                    values.push(checkbox.value);
+                });
+                alert(values);
+            });
+        </script>
+        -->
+
+	    <script src="playground.js"></script>
+
     </body>
 </html>
