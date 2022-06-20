@@ -3,7 +3,7 @@ const data = require('./users.json');
 
 //this would be inputted data
 let region = 'north vern';
-let color = 'blue';
+let color = 'purple';
 
 function readCheckedBoxes() {
     const btn = document.querySelector('#btn-players');
@@ -52,7 +52,7 @@ function playersAvailable(playersHere, totalPlayers) {
 }
 
 //comment out once html file works
-let avail = ['denise', 'patrick', 'jason', 'kishan'];
+let avail = ['denise', 'patrick', 'jason', 'kishan','brendan','david','hara','peter'];
 players = playersAvailable(avail,players);
 
 function playerSort(arr){

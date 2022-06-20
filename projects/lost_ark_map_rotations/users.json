@@ -3,8 +3,8 @@
         "name": "jason",
         "maps": {
             "north vern": {
-                "blue": 12,
-                "purple": 2,
+                "blue": 3,
+                "purple": 3,
                 "gold": 1
             },
             "rohendel": {
@@ -39,7 +39,7 @@
         "name": "patrick",
         "maps": {
             "north vern": {
-                "blue": 16,
+                "blue": 3,
                 "purple": 2,
                 "gold": 1
             },
@@ -75,9 +75,9 @@
         "name": "denise",
         "maps": {
             "north vern": {
-                "blue": 22,
-                "purple": 2,
-                "gold": 1
+                "blue": 3,
+                "purple": 3,
+                "gold": 2
             },
             "rohendel": {
                 "blue": 1,
@@ -111,9 +111,9 @@
         "name": "peter",
         "maps": {
             "north vern": {
-                "blue": 6,
+                "blue": 4,
                 "purple": 2,
-                "gold": 1
+                "gold": 2
             },
             "rohendel": {
                 "blue": 1,
@@ -183,7 +183,7 @@
         "name": "david",
         "maps": {
             "north vern": {
-                "blue": 6,
+                "blue": 4,
                 "purple": 2,
                 "gold": 1
             },
@@ -216,10 +216,10 @@
         "equalize": "no"
     },
     {
-        "name": "taylor",
+        "name": "brendan",
         "maps": {
             "north vern": {
-                "blue": 2,
+                "blue": 3,
                 "purple": 2,
                 "gold": 1
             },
@@ -255,8 +255,8 @@
         "name": "kishan",
         "maps": {
             "north vern": {
-                "blue": 1,
-                "purple": 2,
+                "blue": 5,
+                "purple": 3,
                 "gold": 1
             },
             "rohendel": {
